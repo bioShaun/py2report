@@ -1,0 +1,17 @@
+\BLOCK{ from 'plots_table' import plot,table }
+\section{无参拼接}
+\BLOCK{ if nr_assembly_stats }
+对于没有参考基因组的物种，我们使用 Trinity\cite{Trinity} (Grabherr MG et al. Nat Biotechnol. 2011) 对测序数据进行拼接组装，对拼接出的转录组序列进行后续的分析。拼接结果如下表所示：
+\VAR{ table(nr_assembly_stats_begin,nr_assembly_stats_head,nr_assembly_stats_body,caption='拼接结果统计表') }
+\newpage
+\BLOCK{ endif }
+
+\BLOCK{ if iso_len_dis_path }
+拼接得到的转录本及基因长度分布如下图所示:
+\\
+\\
+\VAR{ plot(iso_len_dis_path_size, iso_len_dis_path,caption='转录本长度分布') }
+\BLOCK{ endif }
+\BLOCK{ if gene_len_dis_path }
+\VAR{ plot(gene_len_dis_path_size, gene_len_dis_path,caption='基因长度分布(基因长度来自该基因下最长的转录本)') }
+\BLOCK{ endif }
