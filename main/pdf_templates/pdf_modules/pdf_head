@@ -84,18 +84,18 @@
     }
     \null\vfill
     \noindent
-   \begin{minipage}[b]{0.5\linewidth}
+   \begin{minipage}[b]{0.75\linewidth}
         \begin{flushleft}
             \printauthor
         \end{flushleft}
     \end{minipage} \\[6cm]
-    \vspace{-3cm}
-    \hspace{10cm}
-    \begin{minipage}[t]{0.4\linewidth}
-         \begin{flushright}
-    \includegraphics[scale=0.1]{\VAR{logo_path}}
-	    \end{flushright}
-    \end{minipage}
+    % \vspace{-3cm}
+    % \hspace{10cm}
+    % \begin{minipage}[t]{0.4\linewidth}
+    %      \begin{flushright}
+    % \includegraphics[scale=0.1]{\VAR{logo_path}}
+    %         \end{flushright}
+    % \end{minipage}
 \end{titlepage}
 \newpage
 \tableofcontents
